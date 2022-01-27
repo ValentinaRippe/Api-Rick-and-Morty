@@ -10,8 +10,8 @@ export function ImgCharacterEpisode({ characters}) {
     characters.map(async (items) => {
       const res = await fetch(items);
       const characterJSON = await res.json();
-      /* const { image } = characterJSON; */
-      setCharacter((prevState) => [...prevState, characterJSON]);
+      const { image } = characterJSON;
+      setCharacter((prevState) => [...prevState, image]);
     });
   }, []);
   return (

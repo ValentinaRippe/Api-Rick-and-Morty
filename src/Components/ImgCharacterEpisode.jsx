@@ -20,7 +20,7 @@ export function ImgCharacterEpisode({ characters}) {
          <img
           key={index}
           className="imgCharacter"
-          src={item.image}
+          src={item}
           width="70"
           alt=""
         />

@@ -1,0 +1,21 @@
+body {
+  position: relative;
+  display: flex;
+  background-attachment: fixed;
+  margin: 0;
+  background-image: url(../img/fondoRickandMorty.png);
+  flex-direction: column;
+  background-size: 100vw 100vh;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+@media screen and (max-width: 800px) {
+  body{
+  background-size: cover;
+  }
+}
+

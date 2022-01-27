@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap");
+
+.Homen {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.imgHome {
+  height: 70vh;
+  margin-right: 16vw;
+  float: right;
+}
+p.welcome {
+  position: absolute;
+  font-family: "Architects Daughter";
+  color: white;
+  font-size: 3vw;
+  margin-left: 12vw;
+  padding: 4rem;
+  border-left: rgb(50, 139, 255) 10px solid;
+}
+@media screen and (max-width: 800px) {
+  .imgHome {
+    position: relative;
+    height: 50vh;
+    margin-top: 8rem;
+  }
+  p.welcome {
+    padding: 0rem;
+    font-size: 7vw;
+    margin-top: -8px;
+    border-bottom: rgb(50, 139, 255) 5px solid;
+    border-left: none;
+  }
+}

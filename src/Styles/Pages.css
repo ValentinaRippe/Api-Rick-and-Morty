@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap');
+
+.Pages{
+    align-items: center;
+    justify-content: center;
+}
+.Pages_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+}
+.page-link{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    width: 10vw;
+    border-style: none;
+    font-family: 'Architects Daughter';
+    font-size: 30px;
+    color: white;
+    margin: 1rem;
+    text-decoration-line: underline;
+    background: transparent;
+}
+.page-link:hover{
+    color: rgb(0, 110, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+    .page-link{
+        display: flex;
+        justify-content: center;
+        width: 22vw;
+    }
+}

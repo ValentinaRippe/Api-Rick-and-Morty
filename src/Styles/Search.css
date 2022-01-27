@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap');
+
+.inputText{
+    text-align: center;
+    border: transparent;
+    background: rgba(238, 130, 238, 0.315);
+    font-size: 2vw;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.inputSearch{
+    font-size: 2vw;
+    font-family: 'Architects Daughter', cursive;
+    background: transparent;
+    border: 1px solid rebeccapurple;
+    color: rgb(64, 192, 224);
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .inputSearch{
+        font-size: 5vw;
+        margin: 10px;
+    }
+    .inputText{
+        font-size: 5vw;
+    }
+}

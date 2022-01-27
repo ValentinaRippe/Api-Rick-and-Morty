@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: normal;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 390px;
+    margin: 1rem;
+    padding: 10px;
+    background:linear-gradient(30deg, rgba(220, 20, 60, 0.103),rgb(206, 108, 63), rgba(205, 92, 92, 0.582), rgba(128, 0, 128, 0.151));
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(211, 195, 190, 0.493);
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -1px rgba(255,255,255,1);
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+.Name{
+    margin-bottom: 0.2rem;
+    font-family: 'Architects Daughter';
+    font-size: 20px;
+    color: black;
+    z-index: 1;
+}
+.Image{
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px #000000;
+    z-index: 2;
+}
+span{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+@media screen and (max-width:800px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 200px;
+        height: 390px;
+        margin: 0.5rem;
+        padding: 10px;
+        background:linear-gradient(30deg, rgba(220, 20, 60, 0.103),rgb(206, 108, 63), rgba(205, 92, 92, 0.582), rgba(128, 0, 128, 0.151));
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(211, 195, 190, 0.493);
+        border-radius: 10px;
+        box-shadow: 0px 0px 18px -1px rgba(255,255,255,1);
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transition: 0.3s ease-in;
+    }
+    
+    .Name{
+        margin-bottom: 0.2rem;
+        font-family: 'Architects Daughter';
+        font-size: 20px;
+        color: black;
+        z-index: 1;
+    }
+    .Image{
+        position: relative;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 5px #000000;
+        z-index: 2;
+    }
+    span{
+        text-align: center;
+        font-size: 18px;
+        margin: 10px;
+    }
+}

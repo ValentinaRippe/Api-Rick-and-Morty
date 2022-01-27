@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap');
+
+.Episode{
+
+}
+.cards_episodes{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card_episode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    background:linear-gradient(30deg, rgba(220, 20, 60, 0.103),sienna, rgb(82, 42, 42), rgba(128, 0, 128, 0.151));
+    stroke-width: 2px;
+    stroke: black;
+    margin: 1rem;
+}
+.card_episode:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 17px 3px rgba(255,255,255,0.77);
+}
+.cardEpisode_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}
+.episode_text{
+    font-family: 'Architects Daughter';
+    justify-content: center;
+    color:  rgb(0, 110, 255);
+    font-size: 25px;
+    margin: 0;
+}
+.name_title{
+    width: 10vw;
+    padding: 0;
+    margin: 0;
+}
+.imgCharacter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 50%;
+}
+.cardImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+    padding: 10px;
+    background-color: rgba(148, 201, 148, 0.384);
+    color: white;
+    border-radius: 10px;
+}
+.name_character{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    color: red;
+    width: 20%;
+    height: 10%;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .episode_text{
+        display: flex;
+    }
+}

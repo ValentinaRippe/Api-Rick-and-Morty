@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap');
+.NavBar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    justify-content: center;
+    height: 10vh;
+    background-color: rgba(43, 43, 43, 0.548);
+}
+.logo{
+    position: relative;
+    float: left;
+    margin-top: 5rem;
+    width: 50vw; max-width: 400px;
+}
+.link{
+    font-family: 'Architects Daughter';
+    font-size: 3vw;
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+    text-decoration-line: overline;
+}
+.linkMedia{
+        
+}
+.link:hover{
+    color: rgb(64, 192, 224);
+}
+@media screen and (max-width:800px){
+    .NavBar{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .logo{
+        position: relative;
+        float: left;
+        margin-top: 1rem;
+        width: 50vw; max-width: 400px;
+    }
+    .link{
+        font-family: 'Architects Daughter';
+        font-size: 5vw;
+        margin: 0.5rem;
+    } 
+}
+
+

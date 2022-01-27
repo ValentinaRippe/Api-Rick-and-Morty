@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dongle:wght@700&display=swap');
+
+.Filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonsFilter{
+    margin: 1rem;
+    padding: 10px;
+    font-family: 'Architects Daughter', cursive;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 2vw;
+}.buttonsFilter:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.textFilter{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3vw;
+    margin-left: 1.5rem; 
+    color: rebeccapurple;  
+}
+@media screen and (max-width: 800px) {
+    .Filters{
+        flex-direction: column;
+    }
+    .filters{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap
+
+    }
+    .buttonsFilter{
+        margin: 0;
+        font-size: 6vw;
+    }
+    .textFilter{
+        font-size: 5vw;
+        margin: 0;
+    }
+
+}

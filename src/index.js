@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './Styles/index.css';
 import App from './Components/App';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Home } from './Components/Home';
 import { Character } from './Components/Character';
 import { Episodes } from "./Components/Episodes";
@@ -10,7 +10,7 @@ import { NavBar } from './Components/NavBar';
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
   <App />
   <Routes>
     <Route path='/' element={<NavBar/>}>
@@ -20,6 +20,6 @@ ReactDOM.render(
     <Route path='*' element={<Navigate replace to='/'/>} />
     </Route>
   </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );

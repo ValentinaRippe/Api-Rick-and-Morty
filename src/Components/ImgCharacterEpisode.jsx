@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "../Styles/Episodes.css";
 
-export function ImgCharacterEpisode({ characters }) {
+export function ImgCharacterEpisode({ characters}) {
   console.log();
   const [character, setCharacter] = useState([{}]);
 
@@ -10,8 +10,8 @@ export function ImgCharacterEpisode({ characters }) {
     characters.map(async (items) => {
       const res = await fetch(items);
       const characterJSON = await res.json();
-      const { image } = characterJSON;
-      setCharacter((prevState) => [...prevState, image]);
+      /* const { image } = characterJSON; */
+      setCharacter((prevState) => [...prevState, characterJSON]);
     });
   }, []);
   return (
@@ -20,7 +20,7 @@ export function ImgCharacterEpisode({ characters }) {
          <img
           key={index}
           className="imgCharacter"
-          src={item}
+          src={item.image}
           width="70"
           alt=""
         />
